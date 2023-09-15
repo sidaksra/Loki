@@ -1,0 +1,330 @@
+@import "reset.css";
+
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
+:root {
+  font-family: "Krona One", sans-serif;
+}
+
+/****************************************
+Page Section Containers
+*****************************************/
+
+/* The body element */
+body {
+  display: flex; 
+  flex-flow: column nowrap; 
+  min-width: 100vw; 
+  min-height: 100vh;
+  font-size: 100%;
+  background-color: #00DBDE;
+}
+
+/** The header element **/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: baseline;
+  font-weight: bold;
+  background-color: rebeccapurple;
+  padding: 0.4em;
+  border-bottom: 0.3em solid white; 
+}
+header h1{
+  margin-left: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(212, 255, 0);
+}
+
+/** The nav element **/
+#navContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 0.5em;
+}
+#navContent ul {    
+  display: flex;
+  align-items: center;
+}
+#navContent ul li {
+  border-radius: 0.1em;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+nav a:hover {
+  color: red;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.2em;
+}
+a:visited{
+  color: greenyellow;
+  text-decoration: none;
+}
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* The main element */
+main {
+  display: flex;
+  padding: 1em;
+  flex-flow: column; 
+  justify-content: flex-start; 
+}
+
+/** The footer element **/
+footer {
+  display: flex; 
+  justify-content: center; 
+  margin: 1em 0;
+  color: black;
+  text-align: center;
+}
+
+/* The section element */
+section {
+  flex: 1;
+  background-color: white;
+  padding: 1em 2em;
+  margin-bottom: 0.5em;
+  border: 0.2em solid #f01fcd; 
+  border-radius: 0.3em; 
+}
+
+/****************************************
+Header Elements
+*****************************************/
+
+h1 {
+  color: rgb(96, 202, 96);
+  font-size: 2em;
+  padding-right: 1em; 
+}
+h2 {
+  color: white;
+  font-size: 1.4em;
+}
+
+/****************************************
+Buttons
+*****************************************/
+
+button:hover {
+  background-color: white;
+  color: #f01fcd;
+  border: 0.15em solid #f01fcd;
+  border-radius: 0.3em; 
+}
+button {
+  display: block;
+  padding: 1em;
+  border-radius: 0.3em; 
+  background-color: #f01fcd;
+  margin-top: 0.35em;
+  text-align: center; 
+  font-size: 1em;
+  box-shadow: 4px 3px 15px #000; 
+  border: 0.15em solid white;
+  color: white;
+  text-align: center; 
+  text-decoration: none; 
+}
+
+/****************************************
+Form Elements
+*****************************************/
+
+form {
+  display: flex; 
+  flex-flow: column nowrap; 
+}
+
+/* The feedback form */
+.feedback > div{
+  display: flex;
+  flex-direction: column;
+}
+.feedback{
+  display: flex;
+  justify-content: center;
+}
+
+form label,
+legend {
+  text-transform: uppercase; 
+  font-size: 1em;
+  padding: 0.5em 0em;
+  letter-spacing: 0.4em; 
+}
+
+form input{ 
+  outline: none;
+  padding: 0.3em;
+  font-size: 1.5em;
+  color: black; 
+  background: rgba(236, 217, 134, 0.25);
+}
+
+img{
+    cursor:pointer;
+    border: 2px solid black;
+    width: 120px;
+
+}
+form input[type="radio"] {
+    margin-right: 1em;
+}
+.imgRadio{
+    display: flex;
+    flex-direction: row;
+}
+form fieldset,
+form > div {
+  display: flex; 
+  margin: 1em 0em;
+}
+form fieldset legend {
+  border: 2px solid red;
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+form fieldset {
+  border: 2px solid red;
+  background-color: rgb(173, 226, 206);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5em;
+}
+fieldset div {
+  display: flex;
+  padding: 1em 5em 1em 1em;
+}
+.number_W_L{
+    text-align: center;
+}
+fieldset legend {
+  display: flex;
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+form > div {
+  display: flex;
+    flex-flow: column;
+}
+textarea{
+  width: 100%;
+}
+
+/*------------------------------------------------------------------------------
+                               Error Styles
+|-----------------------------------------------------------------------------*/
+
+.error {
+  color: #f01fcd;
+  display: block;
+  margin: 0.5em;
+}
+.printout {
+  color: red;
+  background-color: ghostwhite;
+  display: block;
+  border-radius: 0.5em;
+  border: 2px solid black;
+  margin: 0.5em;
+  text-align: center;
+  padding: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+/*##################################################
+              Game over Page
+######################################################*/
+
+#Gameover div:first-child {
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  text-align: center;
+  color: red;
+}
+#Gameover div:nth-child(2) {
+  font-size: 1.5em;
+  text-align: center;
+  color: #f01fcd;
+}
+
+/*##################################################
+              Table Style
+######################################################*/
+#HighScore table{
+    margin: 1.5em 0em 1.5em 2.5em;
+    text-align: center;
+    width: 90%;
+}
+.tableTop th{
+    background-color: #681919;
+    color: white;
+    font-weight: bold;  
+}
+th, td{
+    padding: 10px;
+}
+.Row:nth-child(even){
+    background-color: #a398aa;
+}
+.Row:nth-child(odd){
+    background-color: #ced0c3;
+}
+
+
+/*##################################################
+              Section class = "instructions"
+######################################################*/
+.instructions div
+{
+  padding: 0.5em;
+}
+.instructions h3{
+  text-align: center;
+  color: red;
+}
+.instructions ol li {
+  list-style-type: lower-roman;
+  padding: 0.5em;
+}
+
+@media screen and (max-width:400px) {
+  
+  header h1{
+    font-size: 0.8em;
+  }
+  #navContent ul li {
+    margin-right: 0px;
+    font-size: 0.8em;
+  }
+  form label, legend {
+    text-transform: capitalize;
+    font-size: 1em;
+    padding: 0.5em 0em;
+    letter-spacing: 0em;
+  }
+  fieldset div {
+    display: flex;
+    padding: 0em;
+  
+  }
+}
