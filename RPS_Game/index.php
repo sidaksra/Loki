@@ -85,7 +85,7 @@ if(isset($_POST['submitFeedback'])){
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Question 2: Game Page</title>
+        <title>RPS Game</title>
         <script src="https://kit.fontawesome.com/170f096220.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/master.css" />
     </head>
